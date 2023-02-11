@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Update pasasword</h3>
+			<form action="{{url_for('user_create')}}" method="post">
+				<select name="id_user">
+
+					{% for user in users %}
+
+					<option value="{{user.id}}"> {{user.username}} </option>
+					{% endfor %}
+				</select>
+				<label for="old_password">New password:</label>
+				<input type="text" name="old_password" id="old_password">
+				<label for="new_password">New password:</label>
+				<input type="text" name="new_password" id="new_password">
+				<input type="submit" value="update">
+			</form>
+
+			<a href="http://127.0.0.1:5000/update">Update</a>
+			<a href="http://127.0.0.1:5000/admin">Admin</a>
+
+</body>
+</html>
