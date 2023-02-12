@@ -6,7 +6,7 @@ gitign# Created by https://www.toptal.com/developers/gitignore/api/venv,windows,
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
-__pycache__/
+.__pycache__/
 *.py[cod]
 *$py.class
 
