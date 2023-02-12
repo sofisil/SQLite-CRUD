@@ -4,6 +4,12 @@ gitign# Created by https://www.toptal.com/developers/gitignore/api/venv,windows,
 ### Linux ###
 *~
 
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
 
