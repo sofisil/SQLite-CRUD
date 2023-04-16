@@ -4,6 +4,10 @@ gitign# Created by https://www.toptal.com/developers/gitignore/api/venv,windows,
 ### Linux ###
 *~
 
+
+### SQLite3 ###
+.instance
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 .__pycache__/
