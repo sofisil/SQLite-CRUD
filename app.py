@@ -87,9 +87,9 @@ def create_user():
 
 @app.route('/admin')
 def admin():
-  users = User.query.all()
-  print(users)
-  return render_template('admin.html', users=users)
+    users = User.query.all()
+    print(users)
+    return render_template('admin.html', users=users)
 
 
 @app.route('/update', methods=["GET", "POST"])

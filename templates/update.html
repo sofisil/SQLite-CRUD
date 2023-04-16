@@ -13,18 +13,18 @@
 
 					{% for user in users %}
 
-					<option value="{{user.id}}"> {{user.username}} </option>
+					<option name="username" value="{{user.id}}"> {{user.username}} </option>
 					{% endfor %}
 				</select>
-				<label for="old_password">New password:</label>
+				<label for="old_password">New old password:</label>
 				<input type="text" name="old_password" id="old_password">
 				<label for="new_password">New password:</label>
 				<input type="text" name="new_password" id="new_password">
 				<input type="submit" value="update">
 			</form>
 
-			<a href="http://127.0.0.1:5000/update">Update</a>
-			<a href="http://127.0.0.1:5000/admin">Admin</a>
+			<a href="{{url_for('update')}}">Update</a>
+			<a href="{{url_for('admin')}}">Admin</a>
 
 </body>
 </html>
